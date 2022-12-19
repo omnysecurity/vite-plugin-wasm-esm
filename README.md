@@ -22,11 +22,11 @@ want the plugin to handle:
 
 ```javascript
 // vite.config.js
-import wasmSSR from "@omnysec/vite-plugin-wasm-ssr";
+import wasm from "@omnysec/vite-plugin-wasm-ssr";
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [wasmSSR(["@acme/wasm-calculator"])],
+	plugins: [wasm(["@acme/wasm-calculator"])],
 };
 
 export default config;
@@ -37,11 +37,11 @@ provided by vite doesn't support await at the module top level:
 
 ```javascript
 // vite.config.js
-import wasmSSR from "@omnysec/vite-plugin-wasm-ssr";
+import wasm from "@omnysec/vite-plugin-wasm-ssr";
 
 /** @type {import('vite').UserConfig} */
 const config = {
-	plugins: [wasmSSR(["@acme/wasm-calculator"])],
+	plugins: [wasm(["@acme/wasm-calculator"])],
 	build: {
 		target: ["chrome89", "safari15", "firefox89"],
 	},
