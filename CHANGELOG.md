@@ -1,5 +1,11 @@
 # @omnysecurity/vite-plugin-wasm-ssr
 
+## 1.0.1
+
+### Patch Changes
+
+- c5e9fd0: add package description and keywords
+
 ## 1.0.0
 
 ### Major Changes
