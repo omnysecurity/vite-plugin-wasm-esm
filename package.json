@@ -18,12 +18,14 @@
 		"dev": "tsup src/index.ts --format esm --dts --watch",
 		"build": "tsup src/index.ts --format esm --dts",
 		"lint": "prettier --check --plugin-search-dir=. .",
-		"format": "prettier --write --plugin-search-dir=. ."
+		"format": "prettier --write --plugin-search-dir=. .",
+		"release": "changeset publish"
 	},
 	"peerDependencies": {
 		"vite": "^4.0.2"
 	},
 	"devDependencies": {
+		"@changesets/cli": "^2.26.0",
 		"@types/node": "^18.11.17",
 		"prettier": "^2.8.1",
 		"tsup": "^6.5.0",
