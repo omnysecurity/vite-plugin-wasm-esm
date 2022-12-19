@@ -17,10 +17,23 @@ To use this plugin, you must support [`await`][2] at module top level. This has
 been [supported in all major browsers for a while][3], but if you need
 backwards compatibility, you can use [`vite-plugin-top-level-await`][4].
 
-After installation, add it to your vite config. You need to specify all
-packages you want the plugin to handle as an array to the plugin. You probably
-also need to specify custom build targets, as the default targets provided by
-vite doesn't support await at the module top level.
+After installation, add it to your vite config and specify all packages you
+want the plugin to handle:
+
+```javascript
+// vite.config.js
+import wasmSSR from "@omnysec/vite-plugin-wasm-ssr";
+
+/** @type {import('vite').UserConfig} */
+const config = {
+	plugins: [wasmSSR(["@acme/wasm-calculator"])],
+};
+
+export default config;
+```
+
+You probably also need to specify custom build targets, as the default targets
+provided by vite doesn't support await at the module top level:
 
 ```javascript
 // vite.config.js
