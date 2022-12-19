@@ -19,7 +19,7 @@ type ModuleResolution = {
 	wasmPath: string;
 };
 
-export default function wasmPackSSRPlugin(modules: string[]): Plugin {
+export default function wasm(modules: string[]): Plugin {
 	const moduleSet = new Set(modules);
 	const resolutions: Map<string, ModuleResolution> = new Map();
 

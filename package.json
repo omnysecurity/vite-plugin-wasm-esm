@@ -23,7 +23,7 @@
 		"release": "pnpm build && changeset publish"
 	},
 	"peerDependencies": {
-		"vite": "^4.0.2"
+		"vite": "3.x || 4.x"
 	},
 	"devDependencies": {
 		"@changesets/cli": "^2.26.0",
