@@ -1,4 +1,4 @@
-# @omnysec/vite-plugin-wasm-ssr
+# @omnysecurity/vite-plugin-wasm-ssr
 
 ## 0.1.1
 
