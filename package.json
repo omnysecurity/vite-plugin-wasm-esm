@@ -1,6 +1,6 @@
 {
 	"name": "@omnysec/vite-plugin-wasm-ssr",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"type": "module",
 	"license": "MIT",
 	"homepage": "https://github.com/omnysecurity/vite-plugin-wasm-ssr",
