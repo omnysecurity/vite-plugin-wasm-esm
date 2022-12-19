@@ -3,11 +3,12 @@
 	"version": "0.1.0",
 	"type": "module",
 	"license": "MIT",
+	"homepage": "https://github.com/omnysecurity/vite-plugin-wasm-ssr",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/omnysecurity/vite-plugin-wasm-ssr.git"
 	},
-	"packageManager": "^pnpm@7.18.0",
+	"packageManager": "pnpm@7.18.2",
 	"main": "./dist/index.js",
 	"types": "./dist/index.d.ts",
 	"files": [
@@ -18,12 +19,14 @@
 		"dev": "tsup src/index.ts --format esm --dts --watch",
 		"build": "tsup src/index.ts --format esm --dts",
 		"lint": "prettier --check --plugin-search-dir=. .",
-		"format": "prettier --write --plugin-search-dir=. ."
+		"format": "prettier --write --plugin-search-dir=. .",
+		"release": "pnpm build && changeset publish"
 	},
 	"peerDependencies": {
 		"vite": "^4.0.2"
 	},
 	"devDependencies": {
+		"@changesets/cli": "^2.26.0",
 		"@types/node": "^18.11.17",
 		"prettier": "^2.8.1",
 		"tsup": "^6.5.0",
