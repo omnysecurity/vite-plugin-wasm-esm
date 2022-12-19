@@ -3,6 +3,7 @@
 	"version": "0.1.0",
 	"type": "module",
 	"license": "MIT",
+	"homepage": "https://github.com/omnysecurity/vite-plugin-wasm-ssr",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/omnysecurity/vite-plugin-wasm-ssr.git"
