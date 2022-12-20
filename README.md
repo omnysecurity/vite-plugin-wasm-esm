@@ -22,7 +22,7 @@ want the plugin to handle:
 
 ```javascript
 // vite.config.js
-import wasm from "@omnysec/vite-plugin-wasm-ssr";
+import wasm from "@omnysecurity/vite-plugin-wasm-ssr";
 
 /** @type {import('vite').UserConfig} */
 const config = {
@@ -37,7 +37,7 @@ provided by vite doesn't support await at the module top level:
 
 ```javascript
 // vite.config.js
-import wasm from "@omnysec/vite-plugin-wasm-ssr";
+import wasm from "@omnysecurity/vite-plugin-wasm-ssr";
 
 /** @type {import('vite').UserConfig} */
 const config = {
