@@ -1,5 +1,11 @@
 # @omnysecurity/vite-plugin-wasm-ssr
 
+## 1.0.2
+
+### Patch Changes
+
+- 6e10627: update docs
+
 ## 1.0.1
 
 ### Patch Changes
