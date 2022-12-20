@@ -1,6 +1,6 @@
 {
 	"name": "@omnysecurity/vite-plugin-wasm-ssr",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"type": "module",
 	"license": "MIT",
 	"description": "SSR ready vite plugin for ESM integration of wasm-pack generated packages",
