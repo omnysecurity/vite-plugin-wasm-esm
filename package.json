@@ -1,13 +1,13 @@
 {
-	"name": "@omnysecurity/vite-plugin-wasm-ssr",
-	"version": "1.0.2",
+	"name": "vite-plugin-wasm-esm",
+	"version": "1.0.0",
 	"type": "module",
 	"license": "MIT",
-	"description": "SSR ready vite plugin for ESM integration of wasm-pack generated packages",
-	"homepage": "https://github.com/omnysecurity/vite-plugin-wasm-ssr",
+	"description": "ESM integration of wasm-pack generated modules with SSR support",
+	"homepage": "https://github.com/omnysecurity/vite-plugin-wasm-esm",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/omnysecurity/vite-plugin-wasm-ssr.git"
+		"url": "https://github.com/omnysecurity/vite-plugin-wasm-esm.git"
 	},
 	"packageManager": "pnpm@7.18.2",
 	"keywords": [
@@ -17,6 +17,7 @@
 		"wasm",
 		"webassembly",
 		"wasm-pack",
+		"esm",
 		"es-modules",
 		"modules"
 	],

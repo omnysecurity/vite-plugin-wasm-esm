@@ -1,4 +1,4 @@
-# vite-plugin-wasm-ssr
+# vite-plugin-wasm-esm
 
 Vite plugin with SSR support to use [wasm-pack][1] generated packages as regular ES
 modules.
@@ -8,7 +8,7 @@ modules.
 Install using your favorite package manager
 
 ```
-npm i -D @omnysecurity/vite-plugin-wasm-ssr
+npm i -D vite-plugin-wasm-esm
 ```
 
 ## Usage
@@ -22,7 +22,7 @@ want the plugin to handle:
 
 ```javascript
 // vite.config.js
-import wasm from "@omnysecurity/vite-plugin-wasm-ssr";
+import wasm from "vite-plugin-wasm-esm";
 
 /** @type {import('vite').UserConfig} */
 const config = {
@@ -37,7 +37,7 @@ provided by vite doesn't support await at the module top level:
 
 ```javascript
 // vite.config.js
-import wasm from "@omnysecurity/vite-plugin-wasm-ssr";
+import wasm from "vite-plugin-wasm-esm";
 
 /** @type {import('vite').UserConfig} */
 const config = {

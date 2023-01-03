@@ -12,7 +12,7 @@ permissions: {}
 jobs:
   release:
     name: Release
-    if: github.repository == 'omnysecurity/vite-plugin-wasm-ssr'
+    if: github.repository == 'omnysecurity/vite-plugin-wasm-esm'
     runs-on: ubuntu-latest
     permissions:
       contents: write

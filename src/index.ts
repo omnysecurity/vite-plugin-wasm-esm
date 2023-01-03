@@ -1,7 +1,7 @@
 import { basename } from "path";
 import { Plugin } from "vite";
 
-const IDENTIFIER = "\0__vite-plugin-wasm-ssr";
+const IDENTIFIER = "\0__vite-plugin-wasm-esm";
 
 /**
  * Returns a wasm pack generated module's wasm file name.
@@ -24,7 +24,7 @@ export default function wasm(modules: string[]): Plugin {
 	const resolutions: Map<string, ModuleResolution> = new Map();
 
 	return {
-		name: "vite-plugin-wasm-pack-ssr",
+		name: "vite-plugin-wasm-esm",
 		enforce: "pre",
 
 		config: () => ({ ssr: { noExternal: modules } }),
