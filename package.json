@@ -1,6 +1,6 @@
 {
 	"name": "vite-plugin-wasm-esm",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"type": "module",
 	"license": "MIT",
 	"description": "ESM integration of wasm-pack generated modules with SSR support",
