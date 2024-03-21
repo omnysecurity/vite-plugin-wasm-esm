@@ -50,7 +50,7 @@ export default function wasm(modules: string[]): Plugin {
 				// Fail hard if we don't find the wasm file
 				if (!wasmResolution) {
 					throw new Error(
-						`Expected to find wasm file (${wasmFile}) in module: "${source}".`
+						`Expected to find wasm file (${wasmFile}) in module: "${source}".`,
 					);
 				}
 				// Store the resolved info so we can find back to it later
@@ -77,7 +77,7 @@ export default function wasm(modules: string[]): Plugin {
 			return `
 				import init from ${JSON.stringify(resolution.entryPath)};
 				import url from ${JSON.stringify(
-					`${resolution.module}/${resolution.wasmFileName}?url`
+					`${resolution.module}/${resolution.wasmFileName}?url`,
 				)};
 				if (!import.meta.env.SSR) {
 					await init(url);
