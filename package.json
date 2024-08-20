@@ -30,8 +30,8 @@
 	"scripts": {
 		"dev": "tsup src/index.ts --format esm --dts --watch",
 		"build": "tsup src/index.ts --format esm --dts",
-		"lint": "prettier --check --plugin-search-dir=. .",
-		"format": "prettier --write --plugin-search-dir=. .",
+		"lint": "prettier --check .",
+		"format": "prettier --write .",
 		"release": "pnpm build && changeset publish"
 	},
 	"peerDependencies": {
