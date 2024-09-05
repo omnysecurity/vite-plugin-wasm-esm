@@ -1,5 +1,11 @@
 # vite-plugin-wasm-esm
 
+## 1.0.2
+
+### Patch Changes
+
+- c996cdd: bump dependencies
+
 ## 1.0.1
 
 ### Patch Changes
